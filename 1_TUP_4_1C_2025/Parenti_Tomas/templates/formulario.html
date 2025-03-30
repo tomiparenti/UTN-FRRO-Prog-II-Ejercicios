@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagenes/club_atletico_rosario_central_de_rosario_santa_fe_1903_1964.ico">
+    <title>formulario</title>
+ </head>
+ <body>
+
+    <header> 
+
+        <a href="../index.html"> INICIO </a>
+        <a href="./galeria.html"> GALERIA </a>
+        <a href="./tabla.html"> TABLA </a>
+        <a href="http://www.google.com"> GOOGLE </a>
+        <a href="./listas.html"> LISTAS </a>
+        <a href="#"> FORMULARIO </a>
+
+
+    </header>
+
+    <main>
+        <section>
+            
+            <form action="https://formspree.io/f/xvgkbdgg" method="post" target="_blank">
+
+                <label for="nombre"> NOMBRE: </label>
+                <input type="text" size="18" name="nombre" id="nombre" required> <br>
+
+                <label for="apellido"> APELLIDO: </label>
+                <input type="text" size="18" name="apellido" id="apellido" required> <br>
+
+                <label for="fecha"> FECHA NACIMIENTO: </label>
+                <input type="date" size="18" name="fecha" id="fecha" required> <br> <!-- se usa type: date para fechas -->
+
+                <label for="edad"> EDAD: </label>
+                <input type="number" size="18" name="edad" id="edad" required> <br>
+
+                <h2> GENERO, MARCAR LA OPCION CORRECTA </h2>
+
+                <!-- para genero se usa radio porque te deja elegir solo 1 opcion -->
+
+                <label for="masculino"> MASCULINO </label>
+                <input type="radio" id="masculino" name="genero" value="masculino"><br>
+
+                <label for="femenino"> FEMENINO </label>
+                <input type="radio" id="femenino" name="genero" value="femenino"> <br>
+
+                <label for="otro"> OTRO </label>
+                <input type="radio" id="otro" name="genero" value="otro"> <br>
+
+                <h3> SELECCIONAR SU AREA CORRESPONDIENTE </h3>
+
+                <label for="desarrollo"> DESARROLLO WEB </label>
+                <input type="checkbox" id="desarrollo" name="area" value="desarrollo"> <br>
+
+                <label for="analista"> ANALISTA </label>
+                <input type="checkbox" id="analista" name="area" value="analista"> <br>
+
+                <label for="ingeniero"> INGENIERO </label>
+                <input type="checkbox" id="ingeniero" name="area" value="ingeniero"> <br>
+
+                <h3> LENGUAJES  </h3>
+
+                <label for="python"> PYTHON </label>
+                <input type="checkbox" id="python" name="leng" value="python"> <br>
+
+                <label for="lengc"> C </label>
+                <input type="checkbox" id="lengc" name="leng" value="lengc"> <br>
+
+                <label for="js"> JS </label>
+                <input type="checkbox" id="js" name="leng" value="js"> <br>
+
+                <label for="html"> HTML </label>
+                <input type="checkbox" id="html" name="leng" value="html"> <br>
+
+                <label for="css"> CSS </label>
+                <input type="checkbox" id="css" name="leng" value="css"> <br>
+
+
+                <h4> NAVEGADOR DE PREFERENCIA </h4>
+                <label for="chrome"> Chrome </label>
+                <input type="checkbox" id="chrome" name="navegador" value="chrome"> <br>
+
+                <label for="opera"> Opera </label>
+                <input type="checkbox" id="opera" name="navegador" value="opera"> <br>
+
+                <label for="safari"> Safari </label>
+                <input type="checkbox" id="safari" name="navegador" value="safari"> <br>
+
+                <label for="firefox"> Firefox </label>
+                <input type="checkbox" id="firefox" name="navegador" value="firefox"> <br>
+
+                <label for="edge"> Edge </label>
+                <input type="checkbox" id="edge" name="navegador" value="edge"> <br>
+
+
+                <fieldset>
+                <label for="num"> NUMERO DE TELEFONO: </label>
+                <input type="number" size="18" name="num" id="num" required> <br>
+
+                <label for="emergencia"> CONTACTO DE EMERGENCIA: </label>
+                <input type="number" size="18" name="emergencia" id="emergencia" required> <br>
+                </fieldset>
+
+                <textarea name="comentarios" id="comentarios" rows="10" cols="40"></textarea> <br>
+
+
+                <input type="reset" value=" borrar ">
+                <input type="submit" value=" enviar datos "> <br> <!-- para que sirve submit y enviar datos-->
+                <!-- submit hace que enviar datos sea un boton, y valu muestra enviar datos-->
+            </form>
+
+        </section>
+    </main>
+    
+ </body>
+ </html>
